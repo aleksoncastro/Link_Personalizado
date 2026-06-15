@@ -107,6 +107,15 @@
           de alta performance em <strong class="text-white">Meta Ads</strong> e
           <strong class="text-white">Google Ads</strong> para impulsionar resultados.
         </p>
+        <button onclick="openModal()" class="mt-5 inline-flex items-center gap-3 px-6 py-2.5 bg-gradient-to-r from-navy-900 to-navy-950 border border-gold-500/30 hover:border-gold-500/80 hover:from-navy-800 hover:to-navy-900 rounded-full text-white font-medium text-sm transition-all duration-300 shadow-lg shadow-gold-500/10 hover:shadow-gold-500/30 group pulse-gold">
+          <div class="flex items-center gap-2">
+            <svg class="w-4 h-4 text-gold-400 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+            Sobre Mim
+          </div>
+          <svg class="w-4 h-4 text-gold-400 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
 
       <!-- Seção 2: Destaque Principal - Site -->
@@ -218,6 +227,111 @@
     </section>
 
   </main>
+
+  <!-- Modal Sobre Mim -->
+  <div id="modalSobre" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-navy-950 border border-white/10 rounded-2xl w-11/12 max-w-lg max-h-[85vh] flex flex-col relative shadow-2xl scale-95 transition-transform duration-300" id="modalSobreContent">
+      
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-white/10 flex items-center justify-between sticky top-0 bg-navy-950/95 backdrop-blur-sm rounded-t-2xl z-10">
+        <h2 class="text-xl font-bold text-white flex items-center gap-2">
+          <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+          Sobre Mim
+        </h2>
+        <button onclick="closeModal()" class="text-zinc-400 hover:text-white bg-white/5 hover:bg-white/10 rounded-full p-2 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto">
+        <div class="text-zinc-300 text-sm space-y-5 leading-relaxed">
+          <p>Sou <strong class="text-white">Alêkson</strong>, acadêmico de Sistemas de Informação pela Unitins, profissional de Tecnologia da Informação na Secretaria de Administração do Estado do Tocantins (SECAD) e empreendedor visionário na PH Conecta Imóveis.</p>
+
+          <p>Atuo na construção de soluções digitais, estratégias de marketing de alta performance e campanhas de conversão utilizando Meta Ads, Google Ads e TikTok Ads, conectando pessoas, negócios e oportunidades nos mercados imobiliário, ESG e crédito de carbono, em escala nacional e internacional.</p>
+
+          <p>Minha jornada começou pela paixão por tecnologia, mas evoluiu para algo maior: utilizar a inovação, o marketing e o conhecimento para gerar transformação, prosperidade e impacto positivo na vida das pessoas. Acredito que a tecnologia é apenas uma ferramenta; o verdadeiro diferencial está na capacidade humana de criar, liderar e servir.</p>
+
+          <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+            <h3 class="text-gold-400 font-bold text-xs tracking-widest mb-2 uppercase">Missão</h3>
+            <p>Transformar conhecimento, tecnologia e marketing em oportunidades reais de crescimento para empresas, empreendedores e comunidades, contribuindo para um futuro mais sustentável, ético e conectado.</p>
+          </div>
+
+          <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+            <h3 class="text-gold-400 font-bold text-xs tracking-widest mb-2 uppercase">Visão</h3>
+            <p>Ser referência na integração entre tecnologia, marketing digital, mercado imobiliário, ESG e crédito de carbono, inspirando uma nova geração de empreendedores visionários capazes de gerar riqueza, inovação e impacto positivo para o mundo.</p>
+          </div>
+
+          <div class="bg-white/5 p-4 rounded-xl border border-white/5">
+            <h3 class="text-gold-400 font-bold text-xs tracking-widest mb-2 uppercase">Proposta de Valor</h3>
+            <p>Conectar pessoas, negócios e oportunidades através de estratégias digitais inteligentes, criatividade, análise de dados e soluções tecnológicas que geram resultados mensuráveis e crescimento sustentável.</p>
+          </div>
+
+          <div>
+            <h3 class="text-white font-semibold text-base mb-3 border-b border-white/10 pb-2">VALORES</h3>
+            <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-zinc-300">
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Fé e princípios judaico-cristãos</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Ética, moral e responsabilidade</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Aprendizado contínuo</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Inovação e visão de futuro</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Excelência na execução</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Respeito às pessoas</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Sustentabilidade e impacto social</li>
+              <li class="flex items-start gap-2"><span class="text-gold-400 mt-0.5">•</span> Disciplina, ordem e compromisso</li>
+            </ul>
+          </div>
+
+          <p class="font-medium text-white/90 italic">"Sou um eterno aprendiz. Acredito que grandes transformações acontecem quando conhecimento, propósito e ação caminham juntos."</p>
+
+          <div class="p-3 bg-gradient-to-r from-navy-900 to-navy-950 rounded-xl border border-gold-500/20 text-center text-[11px] sm:text-xs font-medium text-gold-400 shadow-inner">
+            🚀 Tecnologia | Marketing Digital | Mercado Imobiliário | ESG | Crédito de Carbono | Inovação | Empreendedorismo
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-5 border-t border-white/10 bg-navy-950/95 backdrop-blur-sm rounded-b-2xl flex justify-center">
+        <button onclick="closeModal()" class="inline-flex items-center gap-2 px-6 py-2.5 bg-white/5 border border-white/10 hover:border-white/30 hover:bg-white/10 rounded-xl text-white font-medium text-sm transition-all duration-300 w-full justify-center">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          Fechar Janela
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      const modal = document.getElementById('modalSobre');
+      const content = document.getElementById('modalSobreContent');
+      
+      modal.classList.remove('pointer-events-none');
+      modal.classList.remove('opacity-0');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+      document.body.style.overflow = 'hidden'; // Impede rolagem da página
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modalSobre');
+      const content = document.getElementById('modalSobreContent');
+      
+      modal.classList.add('opacity-0');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      document.body.style.overflow = ''; // Restaura rolagem
+      
+      setTimeout(() => {
+        modal.classList.add('pointer-events-none');
+      }, 300);
+    }
+    
+    // Fechar ao clicar fora do conteúdo
+    document.getElementById('modalSobre').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+  </script>
 
 </body>
 
